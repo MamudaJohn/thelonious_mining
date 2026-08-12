@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SERVICES, MINERALS, PROCESS_STEPS, FEATURED_ARTICLES, MARKET_TICKER } from "@/lib/data";
+import TrustStrip from "@/components/home/TrustStrip";
 
 export default function HomePage() {
   return (
@@ -63,26 +64,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== TRUST STRIP ===== */}
-      <div className="trust">
-        <div className="wrap">
-          <div className="stat">
-            <div className="num">2026</div>
-            <div className="label">Founded</div>
-          </div>
-          <div className="stat">
-            <div className="num">7</div>
-            <div className="label">Minerals in scope</div>
-          </div>
-          <div className="stat">
-            <div className="num">Licensed</div>
-            <div className="label">Registered mining operator</div>
-          </div>
-          <div className="stat">
-            <div className="num">By request</div>
-            <div className="label">Private site visits</div>
-          </div>
-        </div>
-      </div>
+      <TrustStrip />
 
       {/* ===== FOOTAGE ===== */}
       <section id="footage">
