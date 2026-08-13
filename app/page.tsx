@@ -1,6 +1,15 @@
 import Link from "next/link";
 import { SERVICES, MINERALS, PROCESS_STEPS, FEATURED_ARTICLES, MARKET_TICKER } from "@/lib/data";
 import TrustStrip from "@/components/home/TrustStrip";
+import EyeBrow from "@/components/ui/paragraphs/EyeBrow";
+import LedeParagraph from "@/components/ui/paragraphs/Lede";
+import CtaRow from "@/components/section/CtaRow";
+import MicroCopy from "@/components/ui/paragraphs/MicroCopy";
+import HeaderOne from "@/components/ui/headers/HeaderOne";
+import ContentDisplayOne from "@/components/section/ContentDisplayOne";
+import ContentDisplayTwo from "@/components/section/ContentDisplayTwo";
+import ContentDisplayThree from "@/components/section/ContentDisplayThree";
+import ContentDisplayFour from "@/components/section/ContentDisplayFour";
 
 export default function HomePage() {
   return (
@@ -9,7 +18,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <div className="eyebrow">Exploration to market</div>
+            <EyeBrow text="Exploration to market"/>
             <h1>
               We find what&apos;s
               <br />
@@ -17,23 +26,9 @@ export default function HomePage() {
               <br />
               what it&apos;s worth.
             </h1>
-            <p className="lede">
-              Thelonious Mining scouts, assays, mines, stores and reports on
-              precious minerals — so investors, partners and governments make
-              decisions on evidence, not estimates.
-            </p>
-            <div className="cta-row">
-              <Link href="/contact" className="btn btn-primary">
-                Request a site feasibility call →
-              </Link>
-              <Link href="/insights" className="btn btn-ghost">
-                Get the market report
-              </Link>
-            </div>
-            <div className="microcopy">
-              <span className="dot" />
-              15-minute call, no obligation. We reply within one business day.
-            </div>
+            <LedeParagraph text="Thelonious Mining scouts, assays, mines, stores and reports on precious minerals — so investors, partners and governments make decisions on evidence, not estimates."/>
+            <CtaRow Href1="/contact" text1="Request a site feasibility call →" Href2="/insights" text2="Get the market report"/>
+            <MicroCopy text="15-minute call, no obligation. We reply within one business day."/>
           </div>
 
           <div className="core-wrap">
@@ -134,17 +129,18 @@ export default function HomePage() {
 
           <div className="log">
             {SERVICES.map((s) => (
-              <div className="log-row" key={s.slug}>
-                <div className="log-depth">{s.depth}</div>
-                <div>
-                  <h3>{s.title}</h3>
-                  <span className="tag">{s.tags.join(" · ")}</span>
-                  <p style={{ marginTop: 10 }}>{s.shortDesc}</p>
-                </div>
-                <Link href={`/services/${s.slug}`} className="log-link">
-                  Learn more →
-                </Link>
-              </div>
+              // <div className="log-row" key={s.slug}>
+              //   <div className="log-depth">{s.depth}</div>
+              //   <div>
+              //     <h3>{s.title}</h3>
+              //     <span className="tag">{s.tags.join(" · ")}</span>
+              //     <p style={{ marginTop: 10 }}>{s.shortDesc}</p>
+              //   </div>
+              //   <Link href={`/services/${s.slug}`} className="log-link">
+              //     Learn more →
+              //   </Link>
+              // </div>
+              <ContentDisplayOne key={s.slug} slug={s.slug} depth={s.depth} title={s.title} tags={s.tags} shortDesc={s.shortDesc}/>
             ))}
           </div>
           <div style={{ marginTop: 32 }}>
@@ -187,19 +183,13 @@ export default function HomePage() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <div className="eyebrow">How a project moves</div>
+             <EyeBrow text="How a project moves"/>
               <h2>From first survey to your monthly report.</h2>
             </div>
           </div>
           <div className="process-list">
             {PROCESS_STEPS.map((step) => (
-              <div className="step" key={step.title}>
-                <div className="step-num">{step.title}</div>
-                <div>
-                  <h3>{step.heading}</h3>
-                  <p>{step.desc}</p>
-                </div>
-              </div>
+              <ContentDisplayTwo key={step.title} title={step.title} heading={step.heading} desc={step.desc}/>
             ))}
           </div>
         </div>
@@ -215,26 +205,10 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="market-panel">
-            <div className="ticker-row head">
-              <div>Mineral</div>
-              <div>Trend (90d)</div>
-              <div>Demand</div>
-              <div>Signal strength</div>
-            </div>
-            {MARKET_TICKER.map((row) => (
-              <div className="ticker-row" key={row.name}>
-                <div>{row.name}</div>
-                <div className={row.trend}>
-                  {row.trend === "up" ? "▲" : "▼"} {row.pct}
-                </div>
-                <div>{row.demand}</div>
-                <div className="bar-bg">
-                  <div className="bar-fill" style={{ width: `${row.signal}%` }} />
-                </div>
-              </div>
-            ))}
-          </div>
+
+          {MARKET_TICKER.map((row,index) => (
+            <ContentDisplayThree key={row.name} name={row.name} trend={row.trend} pct={row.pct} demand={row.demand} signal={row.signal} count={index}/>
+          ))}
           <div style={{ marginTop: 18 }}>
             <Link href="/insights" className="log-link">
               See full market data & all reports →
@@ -243,14 +217,7 @@ export default function HomePage() {
 
           <div className="insights-cols">
             {FEATURED_ARTICLES.map((a) => (
-              <div className="insight-card" key={a.slug}>
-                <div className="cat">{a.cat}</div>
-                <h4>{a.title}</h4>
-                <p>{a.sub}</p>
-                <Link href={`/insights/${a.slug}`} className="log-link" style={{ display: "inline-block", marginTop: 10 }}>
-                  Read report →
-                </Link>
-              </div>
+              <ContentDisplayFour key={a.slug} slug={a.slug} cat={a.cat} title={a.title} sub={a.sub}/>
             ))}
           </div>
 

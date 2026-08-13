@@ -97,7 +97,11 @@ export const FEATURED_ARTICLES: Article[] = [
 ];
 
 export const MARKET_TICKER = [
+  { name: "Mineral", trend: "TREND (90D)", demand : "DEMAND", pct : "", signal : "SIGNAL STRENGTH"},
   { name: "Gold", trend: "up" as const, pct: "+4.2%", demand: "High", signal: 86 },
   { name: "Lithium", trend: "down" as const, pct: "-2.1%", demand: "Volatile", signal: 58 },
   { name: "Copper", trend: "up" as const, pct: "+1.8%", demand: "High", signal: 74 },
+  { name: "Titanium", trend: "up" as const, pct: "+3.0%", demand: "Rising", signal: 60 },
+  { name: "Tin", trend: "down" as const, pct: "+0.6%", demand: "Steady", signal: 80 },
+
 ];

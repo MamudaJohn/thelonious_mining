@@ -9,20 +9,19 @@ const trust = [
 ]
 
 function TrustStrip(){
-
     return (
-            <div className={styles.trust}>
-                <div className={`${styles.wrap} wrap`}>
-                        {
-                            trust.map(({num,label})=>(
-                                <div className={styles.stat} key={label}>
-                                    <div className={styles.num}>{num}</div>
-                                    <div className={styles.label}>{label}</div>
-                                </div>
-                            ))
-                        }
-                </div>
+        <div className={styles.trust}>
+            <div className={`${styles.wrap} wrap`}>
+                    {
+                        trust.map(({num,label})=>(
+                            <div className={styles.stat} key={label}>
+                                <div className={styles.num}>{num}</div>
+                                <div className={styles.label}>{label}</div>
+                            </div>
+                        ))
+                    }
             </div>
+        </div>
     )
 }
 
