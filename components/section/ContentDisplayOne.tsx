@@ -5,16 +5,25 @@ interface valuesReceived {
     depth : string,
     title : string,
     tags : string[],
-    shortDesc : string
+    shortDesc : string,
+    jointags? : boolean
 }
 
-const ContentDisplayOne = ({slug,depth,title,tags,shortDesc}: valuesReceived) => {
+const ContentDisplayOne = ({slug,depth,title,tags,shortDesc, jointags}: valuesReceived) => {
     return (
         <div className="log-row" key={slug}>
             <div className="log-depth">{depth}</div>
             <div>
                 <h3>{title}</h3>
-                <span className="tag">{tags.join(" · ")}</span>
+                {
+                    jointags? (
+                        <span className="tag">{tags.join(" · ")}</span>
+                    ) : (
+                        <span className="cta-row">
+                        {tags.map( tag => <span key={tag} className="tag">{tag}</span>)}
+                        </span>
+                    )
+                }
                 <p style={{ marginTop: 10 }}>{shortDesc}</p>
             </div>
             <Link href={`/services/${slug}`} className="log-link">

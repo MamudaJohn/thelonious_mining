@@ -27,7 +27,7 @@ export const SERVICES: Service[] = [
     slug: "partner-site-scouting",
     depth: "03 / PARTNERS",
     title: "Site Scouting for Partner Companies",
-    tags: ["Companies seeking concessions"],
+    tags: ["Companies", "seeking", "concessions"],
     shortDesc: "We locate and prepare government-viable sites on your behalf.",
   },
   {
@@ -42,7 +42,7 @@ export const SERVICES: Service[] = [
     slug: "operations-management",
     depth: "05 / FIELD OPS",
     title: "Mining Operations Management",
-    tags: ["Operating companies"],
+    tags: ["Operating", "companies"],
     shortDesc:
       "Crew, equipment, safety compliance and output reporting, end to end.",
   },

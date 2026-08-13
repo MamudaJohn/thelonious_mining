@@ -10,6 +10,7 @@ import ContentDisplayOne from "@/components/section/ContentDisplayOne";
 import ContentDisplayTwo from "@/components/section/ContentDisplayTwo";
 import ContentDisplayThree from "@/components/section/ContentDisplayThree";
 import ContentDisplayFour from "@/components/section/ContentDisplayFour";
+import SectionHeadOne from "@/components/section/SectionHeadOne";
 
 export default function HomePage() {
   return (
@@ -64,16 +65,10 @@ export default function HomePage() {
       {/* ===== FOOTAGE ===== */}
       <section id="footage">
         <div className="wrap">
-          <div className="section-head">
-            <div>
-              <div className="eyebrow">See it, don&apos;t just take our word for it</div>
-              <h2>Watch the work. Recorded, on request.</h2>
-            </div>
-            <p>
-              We&apos;re a young company, so we lead with access instead of
-              history — geologist-narrated footage from active work.
-            </p>
-          </div>
+          <SectionHeadOne 
+          eyebrow="See it, don&apos;t just take our word for it" 
+          header="Watch the work. Recorded, on request." 
+          paragraph="We&apos;re a young company, so we lead with access instead of history — geologist-narrated footage from active work."/>
 
           <div className="footage-grid">
             <div className="video-panel">
@@ -119,28 +114,15 @@ export default function HomePage() {
       {/* ===== SERVICES ===== */}
       <section id="services">
         <div className="wrap">
-          <div className="section-head">
-            <div>
-              <div className="eyebrow">What we do</div>
-              <h2>Five disciplines. One chain of custody, from ground to ledger.</h2>
-            </div>
-            <p>Each service stands alone or connects into the next.</p>
-          </div>
+          <SectionHeadOne 
+          eyebrow="what we do"
+          header="Five disciplines. One chain of custody, from ground to ledger."
+          paragraph="Each service stands alone or connects into the next."
+          />
 
           <div className="log">
             {SERVICES.map((s) => (
-              // <div className="log-row" key={s.slug}>
-              //   <div className="log-depth">{s.depth}</div>
-              //   <div>
-              //     <h3>{s.title}</h3>
-              //     <span className="tag">{s.tags.join(" · ")}</span>
-              //     <p style={{ marginTop: 10 }}>{s.shortDesc}</p>
-              //   </div>
-              //   <Link href={`/services/${s.slug}`} className="log-link">
-              //     Learn more →
-              //   </Link>
-              // </div>
-              <ContentDisplayOne key={s.slug} slug={s.slug} depth={s.depth} title={s.title} tags={s.tags} shortDesc={s.shortDesc}/>
+              <ContentDisplayOne key={s.slug} slug={s.slug} depth={s.depth} title={s.title} tags={s.tags} shortDesc={s.shortDesc} jointags={true}/>
             ))}
           </div>
           <div style={{ marginTop: 32 }}>
@@ -154,12 +136,11 @@ export default function HomePage() {
       {/* ===== MINERALS ===== */}
       <section id="minerals">
         <div className="wrap">
-          <div className="section-head">
-            <div>
-              <div className="eyebrow">Minerals we work with</div>
-              <h2>Seven materials, tracked from deposit to delivery.</h2>
-            </div>
-          </div>
+          <SectionHeadOne 
+          eyebrow="Minerals we work with"
+          header="Seven materials, tracked from deposit to delivery."
+          paragraph=""
+          />
           <div className="minerals-grid">
             {MINERALS.slice(0, 3).map((m) => (
               <Link href={`/minerals/${m.slug}`} className="mineral-card" key={m.slug}>
@@ -181,12 +162,11 @@ export default function HomePage() {
       {/* ===== PROCESS ===== */}
       <section id="process">
         <div className="wrap">
-          <div className="section-head">
-            <div>
-             <EyeBrow text="How a project moves"/>
-              <h2>From first survey to your monthly report.</h2>
-            </div>
-          </div>
+          <SectionHeadOne 
+          eyebrow="How a project moves"
+          header="From first survey to your monthly report."
+          paragraph=""
+          />
           <div className="process-list">
             {PROCESS_STEPS.map((step) => (
               <ContentDisplayTwo key={step.title} title={step.title} heading={step.heading} desc={step.desc}/>
@@ -198,12 +178,11 @@ export default function HomePage() {
       {/* ===== INSIGHTS ===== */}
       <section id="insights">
         <div className="wrap">
-          <div className="section-head">
-            <div>
-              <div className="eyebrow">Market insights</div>
-              <h2>Current read on the minerals we handle.</h2>
-            </div>
-          </div>
+          <SectionHeadOne 
+          eyebrow="Market Insights"
+          header="Current read on the minerals we handle."
+          paragraph=""
+          />
 
 
           {MARKET_TICKER.map((row,index) => (
@@ -237,12 +216,11 @@ export default function HomePage() {
       {/* ===== CONTACT ===== */}
       <section id="contact">
         <div className="wrap">
-          <div className="section-head">
-            <div>
-              <div className="eyebrow">Start a conversation</div>
-              <h2>Tell us where you&apos;re standing, and we&apos;ll tell you the next step.</h2>
-            </div>
-          </div>
+          <SectionHeadOne
+          eyebrow="start a conversation"
+          header="Tell us where you&apos;re standing, and we&apos;ll tell you the next step."
+          paragraph=""
+          />
 
           <div className="contact-grid">
             <div className="contact-card">
