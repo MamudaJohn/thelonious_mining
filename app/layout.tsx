@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Headers";
 import Footer from "@/components/Footers";
 import ScrollUI from "@/components/ScrollUI";
+import UpBarNavigation from "@/components/UpBarNavigation";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body>
         <ScrollUI />
         <Header />
+        {/* <UpBarNavigation /> */}
         {children}
         <Footer />
       </body>

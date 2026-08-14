@@ -2,8 +2,8 @@ import Link from "next/link";
 
 interface valuesReceived {
     title : string
-    heading : string,
-    desc : string,
+    heading? : string,
+    desc? : string,
 }
 
 const ContentDisplayTwo = ({title, heading,desc}: valuesReceived) => {
@@ -11,8 +11,8 @@ const ContentDisplayTwo = ({title, heading,desc}: valuesReceived) => {
         <div className="step" key={title}>
             <div className="step-num">{title}</div>
             <div>
-                <h3>{heading}</h3>
-                <p>{desc}</p>
+                {heading && <h3>{heading}</h3>}
+                {desc && <p>{desc}</p>}
             </div>
         </div>
     )
