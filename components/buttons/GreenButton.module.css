@@ -1,0 +1,11 @@
+.greenbutton {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--verdigris);
+  border: 1px solid var(--verdigris-dim);
+  padding: 4px 9px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

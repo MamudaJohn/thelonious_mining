@@ -1,4 +1,6 @@
 import Link from "next/link";
+import logo from "@/app/favicon.ico"
+import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "Services", href: "/services" },
@@ -13,7 +15,7 @@ function Header() {
     <header className="site-header">
       <nav className="wrap nav">
         <Link href="/" className="logo">
-          <span className="logo-mark" />
+          <Image className="logo-mark" src={logo} alt="Thelonious Mining's Logo"/>
           <span className="logo-word">
             Thelonious <span>Mining</span>
           </span>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SERVICES, MINERALS, PROCESS_STEPS, FEATURED_ARTICLES, MARKET_TICKER } from "@/lib/data";
+import { SERVICES, MINERALS, PROCESS_STEPS, FEATURED_ARTICLES, MARKET_TICKER, CONTACT_TYPES } from "@/lib/data";
 import TrustStrip from "@/components/home/TrustStrip";
 import EyeBrow from "@/components/ui/paragraphs/EyeBrow";
 import LedeParagraph from "@/components/ui/paragraphs/Lede";
@@ -11,6 +11,8 @@ import ContentDisplayTwo from "@/components/section/ContentDisplayTwo";
 import ContentDisplayThree from "@/components/section/ContentDisplayThree";
 import ContentDisplayFour from "@/components/section/ContentDisplayFour";
 import SectionHeadOne from "@/components/section/SectionHeadOne";
+import ContentDisplayBorder from "@/components/section/ContentDisplayBorder";
+import CtaPanel from "@/components/section/CtaPanel";
 
 export default function HomePage() {
   return (
@@ -122,7 +124,7 @@ export default function HomePage() {
 
           <div className="log">
             {SERVICES.map((s) => (
-              <ContentDisplayOne key={s.slug} slug={s.slug} depth={s.depth} title={s.title} tags={s.tags} shortDesc={s.shortDesc} jointags={true}/>
+              <ContentDisplayOne key={s.slug} slug={s.slug} depth={s.depth} title={s.title} tags={s.tags} shortdesc={s.shortdesc} jointags={true}/>
             ))}
           </div>
           <div style={{ marginTop: 32 }}>
@@ -169,7 +171,7 @@ export default function HomePage() {
           />
           <div className="process-list">
             {PROCESS_STEPS.map((step) => (
-              <ContentDisplayTwo key={step.title} title={step.title} heading={step.heading} desc={step.desc}/>
+              <ContentDisplayTwo key={step.title} title={step.title} heading={step.heading} paragraph={step.paragraph}/>
             ))}
           </div>
         </div>
@@ -222,25 +224,18 @@ export default function HomePage() {
           paragraph=""
           />
 
-          <div className="contact-grid">
-            <div className="contact-card">
-              <h4>Investors</h4>
-              <p>Request our current market report and a feasibility read on a mineral or region you&apos;re watching.</p>
-              <Link href="/contact">Request market report →</Link>
-            </div>
-            <div className="contact-card">
-              <h4>Companies seeking a site</h4>
-              <p>We&apos;ll scout, assess and carry a concession through to government-ready feasibility on your behalf.</p>
-              <Link href="/contact">Start a site request →</Link>
-            </div>
-            <div className="contact-card">
-              <h4>Existing operators</h4>
-              <p>Hand us day-to-day running of your active site — crew, compliance, output reporting.</p>
-              <Link href="/contact">Discuss operations support →</Link>
-            </div>
-          </div>
 
-          <div className="cta-panel" style={{ marginTop: 40 }}>
+          <ContentDisplayBorder values={CONTACT_TYPES}/>
+
+          <CtaPanel
+          head= "Prefer to talk it through first?"
+          paragraph= "Visit our head office directly, or go to the full contact page for the form and details."
+          link= "Go to contact →"
+          linkto= "contact"
+          />
+
+
+          {/* <div className="cta-panel" style={{ marginTop: 40 }}>
             <div>
               <h3>Prefer to talk it through first?</h3>
               <p>Visit our head office directly, or go to the full contact page for the form and details.</p>
@@ -248,7 +243,7 @@ export default function HomePage() {
             <Link href="/contact" className="btn btn-primary">
               Go to contact →
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

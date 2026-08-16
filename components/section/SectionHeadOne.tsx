@@ -3,7 +3,7 @@ import EyeBrow from "../ui/paragraphs/EyeBrow";
 interface valueReceived {
     eyebrow : string,
     header : string,
-    paragraph : string | null
+    paragraph? : string | null
 }
 
 const SectionHeadOne = ({eyebrow, header, paragraph=null}: valueReceived) => {
@@ -11,7 +11,11 @@ const SectionHeadOne = ({eyebrow, header, paragraph=null}: valueReceived) => {
         <div className="section-head">
             <div>
               <EyeBrow text={eyebrow} />
-              <h2>{header}</h2>
+              { paragraph ? (
+                  <h2>{header}</h2>
+              ) : (
+                  <h2 className="hh2">{header}</h2>
+              )}
             </div>
             {paragraph && <p>{paragraph}</p>}
         </div>

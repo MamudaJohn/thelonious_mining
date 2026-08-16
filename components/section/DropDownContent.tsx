@@ -1,11 +1,10 @@
 
-
 import Link from "next/link";
 import GreenButton from "../buttons/GreenButton";
 
 interface valuesReceived {
     slug?: string | null;
-    depth?: string | null;
+    depth: string;
     title?: string | null;
     tags?: string[] | null;
     shortdesc?: string | null;
@@ -13,9 +12,9 @@ interface valuesReceived {
     className?: string | null;
 }
 
-const ContentDisplayOne = ({
+const DropDownContent = ({
     slug = null,
-    depth = null,
+    depth,
     title = null,
     tags = null,
     shortdesc = null,
@@ -28,9 +27,9 @@ const ContentDisplayOne = ({
     const activeSlug = slug || "unknown";
 
     return (
-        <div className={`log-row ${className}`} key={activeSlug}>
+        <details className={`log-row ${className}`} key={activeSlug}>
             {/* Renders nothing if depth is null */}
-            {depth && <div className="log-depth">{depth}</div>}
+            {depth && <summary className="log-depth">{depth}</summary>}
             
             <div>
                 {/* Renders nothing if title is null */}
@@ -57,8 +56,9 @@ const ContentDisplayOne = ({
             {/* <Link href={`/services/${activeSlug}`} className="log-link">
                 Learn more →
             </Link> */}
-        </div>
+        </details>
     );
 };
 
-export default ContentDisplayOne;
+export default DropDownContent;
+

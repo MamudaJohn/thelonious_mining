@@ -1,0 +1,47 @@
+.log {
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+}
+.logRow {
+  display: grid;
+  grid-template-columns: 110px 1fr 140px;
+  gap: 30px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+}
+.depth {
+  font-family: var(--font-mono);
+  color: var(--gold);
+  font-size: 13px;
+}
+.tag {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--verdigris);
+  border: 1px solid var(--verdigris-dim);
+  padding: 4px 9px;
+  text-transform: uppercase;
+}
+.link {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--paper);
+  text-decoration: none;
+  align-self: center;
+  justify-self: end;
+}
+
+
+
+
+/* 
+font-face {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+} */
