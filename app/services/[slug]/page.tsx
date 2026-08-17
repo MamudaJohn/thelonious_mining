@@ -12,6 +12,7 @@ import ContentDisplayOne from "@/components/section/ContentDisplayOne";
 import ContentDisplayBorder from "@/components/section/ContentDisplayBorder";
 import DropDownContent from "@/components/section/DropDownContent";
 import CtaPanel from "@/components/section/CtaPanel";
+import ParagraphGrid from "@/components/ui/paragraphs/ParagraphGrid";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -85,12 +86,18 @@ export default async function ServicePage({ params }: Params) {
           />
           <ContentDisplayBorder>
           {service.audience.map((item) => (
+            <ParagraphGrid 
+            key={item.title}
+            h1={item.title}
+            paragraph={item.paragraph}
+            />
 
-            <ContentDisplayOne 
-            className={"contact-card"}
-            key={item.title}  
-            depth={item.title} 
-            shortdesc={item.paragraph}/>))}  
+            // <ContentDisplayOne 
+            // className={"contact-card"}
+            // key={item.title}  
+            // depth={item.title} 
+            // shortdesc={item.paragraph}/>
+            ))}  
           </ContentDisplayBorder>
           
         </div>

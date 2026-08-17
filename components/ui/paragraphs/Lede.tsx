@@ -1,10 +1,11 @@
 interface valueReceived {
     text : string
+    classname? : string
 }
 
-const LedeParagraph = ({text}: valueReceived) => {
+const LedeParagraph = ({text, classname=""}: valueReceived) => {
     return (
-        <p className="lede">
+        <p className={classname && "lede"}>
             {text}
         </p>
 

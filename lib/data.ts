@@ -336,3 +336,25 @@ export const CONTACT_TYPES = [
     linkText : "Discuss operations support →"
   },
 ]
+
+export type step = {title:string, paragraph:string}[]
+
+export const STEP1 : step = [
+  {title:"Investor", paragraph:"Request our current market report and a feasibility read on a mineral or region you're watching"},
+  {title:"Company seeking a site", paragraph:"We'll scout, assess and carry a concession through to government-ready feasibility on your behalf."},
+  {title:"Existing operator", paragraph:"Hand us day-to-day running of your active site — crew, compliance, output reporting."},
+
+]
+
+export type address = {
+  h1:string,
+  title: string,
+  paragraph: string
+}[]
+
+export const contactaddress : address = [
+ {h1:"CALL", title:"08015581406",paragraph:"Mon – Fri, 9:00 – 17:00 WAT"},
+ {h1:"EMAIL", title:"theloniousmining@theloniousglobal.com",paragraph:"We reply within one business day"},
+ {h1:"VISIT", title:"82, Mobolaji Bank Anthony Way, Ikeja, Lagos",paragraph:"No appointment required during business hours"},
+]
+
