@@ -84,20 +84,19 @@ function AboutPage() {
                 header="Reach us directly."
                 paragraph=""
                 />
-                <ContentDisplayBorder>
-                    {contactaddress.map((item) => (
+                <ContentDisplayBorder values={contactaddress} />
+                    {/* {contactaddress.map((item) => (
                         <ParagraphGrid
                         key={item.title}
                         h1={item.h1}
                         title={item.title}
                         paragraph={item.paragraph}
                         />
-                    ))}
-                </ContentDisplayBorder>
+                    ))} */}
                 <div className="confid-note">
             <div className="icon">i</div>
             <p>
-              <b>A note on site visits:</b>{" "}we don&apos;t publish exact mine site coordinates publicly, for security reasons. If your enquiry needs an in-person site visit, we &apos;ll arrange that privately once we understand what you need.
+              <b>A note on site visits:</b>{" "}we don&apos;t publish exact mine site coordinates publicly, for security reasons. If your enquiry needs an in-person site visit, we&apos;ll arrange that privately once we understand what you need.
             </p>
           </div>
     
