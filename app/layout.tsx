@@ -26,12 +26,33 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://theloniousmining.com'),
   title: {
-    default: "thelonious Resources — Exploration to Market",
+    default: "Thelonious Mining — Exploration to Market",
     template: "%s — thelonious Resources",
   },
   description:
-    "Licensed mineral exploration, mining, storage and market analysis — from first survey to your monthly report.",
+    "Licensed mineral exploration, mining, storage and market analysis company. We service from first survey to your monthly report.",
+  openGraph : {
+    title: "Thelonious Mining",
+    description: "The top-most, most transparent mining company in Nigeria.",
+    url: "https://theloniousmining.com",
+    images : [
+      {
+        url: '/company.png',
+        width: 64,
+        height: 64,
+        alt: 'Thelonious Mining Logo',
+      },
+    ],
+    type: 'website',
+  },
+  twitter : {
+    card: 'summary_large_image', 
+    title: 'Thelonious Mining',
+    description: 'The top-most, most transparent mining company in Nigeria.',
+    images: ['/company.png'], 
+  },
 };
 
 export default function RootLayout({
