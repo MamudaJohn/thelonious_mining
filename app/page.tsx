@@ -16,7 +16,7 @@ import CtaPanel from "@/components/section/CtaPanel";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="">
       {/* ===== HERO ===== */}
       <section className="hero">
         <div className="wrap hero-grid">
@@ -246,6 +246,6 @@ export default function HomePage() {
           </div> */}
         </div>
       </section>
-    </>
+    </div>
   );
 }

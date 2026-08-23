@@ -124,6 +124,11 @@ h4 {
   justify-content: space-between;
   height: 76px;
 }
+
+.nav1 {
+  display: hidden
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -174,6 +179,33 @@ h4 {
 .navlinks a:hover {
   color: var(--paper);
 }
+
+.navlinks1 {
+  display: hidden;
+  gap: 34px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navlinks1 a {
+  text-decoration: none;
+  font-size: 14.5px;
+  color: var(--paper-dim);
+  transition: color 0.2s ease;
+}
+.navlinks1 a:hover {
+  color: var(--paper);
+}
+
+.adds {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+
 .nav-cta {
   font-family: var(--font-mono);
   font-size: 12.5px;
@@ -192,6 +224,15 @@ h4 {
 @media (max-width: 900px) {
   .navlinks {
     display: none;
+  }
+
+  .navlinks1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adds {
+    display: flex;
   }
 }
 
@@ -221,6 +262,10 @@ button:focus-visible {
 }
 @media (max-width: 900px) {
   .navlinks {
+    display: none;
+  }
+
+  .navlinks-wrap{
     display: none;
   }
 }
@@ -1299,3 +1344,73 @@ section {
 .radio-container input[type="radio"]:focus-visible + .custom-radio {
   box-shadow: 0 0 0 3px var(--gold-dim);
 }
+
+
+.hamburgerclick {
+  display: hidden;
+}
+
+.Hamburger {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: fit-content;
+    padding-bottom: 10px;
+  }
+
+  .Hamburger {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: normal;
+    width: 60px;
+  }
+
+  .hamburgerclick {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: normal;
+    width: 60px;
+  }
+
+  .Hamburger span {
+    height: 3px;
+    width: 50%;
+    border-radius: 10%;
+    background-color: var(--gold-dim);
+    transition: transform 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  .hamburgerclick span:nth-child(1) {
+    background-color: var(--gold);
+    transform: translateY(9px) rotate(45deg);
+    padding: 5px;
+    height: 3px;
+    width: 50%;
+  }
+  .hamburgerclick span:nth-child(2) {
+    background-color: var(--gold);
+    transform: translateY(-5px) rotate(-45deg);
+    padding: 5px;
+    height: 3px;
+    width: 50%;
+  }
+
+  .hamburgerclick span:nth-child(3) {
+    opacity: 0; 
+    height: 3px;
+    width: 50%; 
+  }
+
+}
+
+

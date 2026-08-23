@@ -353,7 +353,7 @@ export type address = {
 }[]
 
 export const contactaddress : address = [
- {h1:"CALL", title:"08015581406",paragraph:"Mon – Fri, 9:00 – 17:00 WAT"},
+ {h1:"CALL", title:"09015581406",paragraph:"Mon – Fri, 9:00 – 17:00 WAT"},
  {h1:"EMAIL", title:"mining@theloniousglobal.com",paragraph:"We reply within one business day"},
  {h1:"VISIT", title:"82, Mobolaji Bank Anthony Way, Ikeja, Lagos",paragraph:"No appointment required during business hours"},
 ]
