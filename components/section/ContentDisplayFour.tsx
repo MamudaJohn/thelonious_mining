@@ -13,7 +13,7 @@ const ContentDisplayFour = ({slug, cat, title, sub}: valueReceived) => {
             {slug && <div className="cat">{cat}</div>}
             {title && <h4>{title}</h4>}
             {sub && <p>{sub}</p>}
-            { slug && <Link href={`/insights/${slug}`} className="log-link" style={{ display: "inline-block", marginTop: 10 }}>
+            { slug && <Link href={``} className="log-link" style={{ display: "inline-block", marginTop: 10 }}>
                 Read report →
             </Link>} 
         </div>
