@@ -191,7 +191,7 @@ export default function HomePage() {
             <ContentDisplayThree key={row.name} name={row.name} trend={row.trend} pct={row.pct} demand={row.demand} signal={row.signal} count={index}/>
           ))}
           <div style={{ marginTop: 18 }}>
-            <Link href="/insights" className="log-link">
+            <Link href="/contact" className="log-link">
               See full market data & all reports →
             </Link>
           </div>
