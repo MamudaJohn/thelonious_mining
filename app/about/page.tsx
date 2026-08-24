@@ -10,7 +10,7 @@ import Link from "next/link"
 
 function AboutPage() {
   return (
-    <>
+    <div className="wrap">
         <section className="hero1" id="hero1">
             <div className="wrap">
             <div className="hero1-grid">
@@ -92,17 +92,43 @@ function AboutPage() {
         </div>
       </section>
       <section>
-            <div className="wrap">
-                <div className="confid-note">
-                    <div className="icon">i</div>
-                    <p>
-                    <b>Why we don&apos;t publish exact site coordinates:</b>{" "}
-                    disclosing active mining locations publicly invites
-                    claim-jumping and unauthorised entry, so we withhold them by
-                    policy. It is a standard practice across the industry. Our head office
-                    address below is always public.
-                    </p>
+            <div className="wrap info">
+              <div className="about_us">
+                <EyeBrow text="The only address we publish"/>
+                <h3>Head office : visit us directly</h3>
+                <div className="about_details">
+                  <div className="">
+                    <h2>address</h2>
+                    <p>82, Mobolaji Bank Anthony Way, Ikeja, Lagos</p>
+                  </div>
+                  <div className="">
+                    <h2>phone</h2>
+                    <p>09015581406</p>
+                  </div>
+                  <div className="">
+                    <h2>email</h2>
+                    <p>mining@theloniousglobal.com</p>
+                  </div>
+                  <div className="">
+                    <h2>hours</h2>
+                    <p>Monday - Friday, 9:00 - 17:00 WAT</p>
+                  </div>
                 </div>
+                  <Link href="/contact" className="nav-cta">
+                    Get directions
+                  </Link>
+
+              </div>
+              <div className="confid-note">
+                  <div className="icon">i</div>
+                  <p>
+                  <b>Why we don&apos;t publish exact site coordinates:</b>{" "}
+                  disclosing active mining locations publicly invites
+                  claim-jumping and unauthorised entry, so we withhold them by
+                  policy. It is a standard practice across the industry. Our head office
+                  address below is always public.
+                  </p>
+              </div>
               <CtaPanel
                         head= "Prefer to talk it through first?"
                         paragraph= "Visit our head office directly, or go to the full contact page for the form and details."
@@ -113,7 +139,7 @@ function AboutPage() {
         </section>
 
       
-    </>
+    </div>
   )
 }
 
