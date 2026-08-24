@@ -20,7 +20,7 @@ function Header() {
 
     const clickHandler = () => {
       console.log("We are inside the ")
-      setAddValue(!addValue)      
+      setAddValue(prevValue => !prevValue)      
     }
 
   return (
@@ -54,8 +54,11 @@ function Header() {
       <div className="menu-wrapper">
         <nav className={`nav1 ${addValue && 'active'}`}>
           <ul className="wrap navlinks1">
+              <li key="/">
+                  <Link href="/">Home</Link>
+              </li>
               {NAV_LINKS.map((link) => (
-                <li key={link.href}>
+                <li key={link.href} onClick={clickHandler}>
                   <Link href={link.href}>{link.label}</Link>
                 </li>
               ))}
