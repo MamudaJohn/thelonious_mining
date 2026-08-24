@@ -30,7 +30,7 @@ export default function HomePage() {
               what it&apos;s worth.
             </h1>
             <LedeParagraph text="Thelonious Mining scouts, assays, mines, stores and reports on precious minerals — so investors, partners and governments make decisions on evidence, not estimates."/>
-            <CtaRow Href1="/contact" text1="Request a site feasibility call →" Href2="/insights" text2="Get the market report"/>
+            <CtaRow Href1="/contact" text1="Request a site feasibility call →"/>
             <MicroCopy text="15-minute call, no obligation. We reply within one business day."/>
           </div>
 

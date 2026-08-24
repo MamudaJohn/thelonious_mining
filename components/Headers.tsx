@@ -51,16 +51,17 @@ function Header() {
         </div>
       </nav>
 
-      
-      {addValue && <nav className="nav1">
-        <ul className="wrap navlinks1">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <Link href={link.href}>{link.label}</Link>
-              </li>
-            ))}
-          </ul>
-      </nav>}
+      <div className="menu-wrapper">
+        <nav className={`nav1 ${addValue && 'active'}`}>
+          <ul className="wrap navlinks1">
+              {NAV_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href}>{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+        </nav>
+      </div>
     </header>
   );
 }
