@@ -10,6 +10,14 @@
   border-bottom: 1px solid var(--line);
   align-items: start;
 }
+
+@media (max-width:900px){
+  .logRow {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 .depth {
   font-family: var(--font-mono);
   color: var(--gold);
