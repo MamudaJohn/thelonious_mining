@@ -16,7 +16,7 @@ const NAV_LINKS = [
 
 
 function Header() {
-    const [addValue, setAddValue] = useState(true);
+    const [addValue, setAddValue] = useState(false);
 
     const clickHandler = () => {
       console.log("We are inside the ")
