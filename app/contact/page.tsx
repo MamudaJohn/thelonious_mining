@@ -102,6 +102,7 @@ function AboutPage() {
     
             </div>
         </section>
+        
     </>
   )
 }

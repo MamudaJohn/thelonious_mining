@@ -1,5 +1,6 @@
 import GreenButton from "@/components/buttons/GreenButton"
 import ContentDisplayOne from "@/components/section/ContentDisplayOne"
+import CtaPanel from "@/components/section/CtaPanel"
 import CtaRow from "@/components/section/CtaRow"
 import SectionHeadOne from "@/components/section/SectionHeadOne"
 import EyeBrow from "@/components/ui/paragraphs/EyeBrow"
@@ -90,6 +91,26 @@ function AboutPage() {
           />
         </div>
       </section>
+      <section>
+            <div className="wrap">
+                <div className="confid-note">
+                    <div className="icon">i</div>
+                    <p>
+                    <b>Why we don&apos;t publish exact site coordinates:</b>{" "}
+                    disclosing active mining locations publicly invites
+                    claim-jumping and unauthorised entry, so we withhold them by
+                    policy. It is a standard practice across the industry. Our head office
+                    address below is always public.
+                    </p>
+                </div>
+              <CtaPanel
+                        head= "Prefer to talk it through first?"
+                        paragraph= "Visit our head office directly, or go to the full contact page for the form and details."
+                        link= "Go to contact →"
+                        linkto= "contact"
+                        />
+            </div>
+        </section>
 
       
     </>

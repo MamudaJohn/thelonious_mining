@@ -106,7 +106,7 @@ export default function HomePage() {
               <b>Why we don&apos;t publish exact site coordinates:</b>{" "}
               disclosing active mining locations publicly invites
               claim-jumping and unauthorised entry, so we withhold them by
-              policy — standard practice across the industry. Our head office
+              policy. It is standard practice across the industry. Our head office
               address below is always public.
             </p>
           </div>
