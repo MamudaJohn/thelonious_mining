@@ -190,7 +190,15 @@ h4 {
   list-style: none;
   margin: 0;
   padding: 0;
+  align-content: center;
+
 }
+
+.navlinks1 li {
+  align-self: center;
+  text-align: center;
+}
+
 .navlinks1 a {
   text-decoration: none;
   font-size: 14.5px;
