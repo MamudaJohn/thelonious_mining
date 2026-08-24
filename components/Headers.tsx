@@ -53,12 +53,12 @@ function Header() {
 
       <div className="menu-wrapper">
         <nav className={`nav1 ${addValue && 'active'}`}>
-          <ul className="wrap navlinks1">
+          <ul className="wrap navlinks1" onClick={clickHandler}>
               <li key="/">
                   <Link href="/">Home</Link>
               </li>
               {NAV_LINKS.map((link) => (
-                <li key={link.href} onClick={clickHandler}>
+                <li key={link.href}>
                   <Link href={link.href}>{link.label}</Link>
                 </li>
               ))}
