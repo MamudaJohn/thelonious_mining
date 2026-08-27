@@ -32,7 +32,7 @@ export const SERVICES: Service[] = [
     ],
     faq: [
       { q: "How long does a screening take?", a: "Desk research and an initial field visit typically take two to four weeks, depending on site accessibility. Full sampling and lab turnaround can extend this to six to eight weeks." },
-      { q: "What if the site turns out not to be viable?", a: "You still receive the full report — a negative result is a result. It's far cheaper to learn this before licensing and equipment costs than after." },
+      { q: "What if the site turns out not to be viable?", a: "You still receive the full report because regardless, a negative result is a result. It's far cheaper to learn this before licensing and equipment costs than after." },
     ],
   },
   {
@@ -42,11 +42,11 @@ export const SERVICES: Service[] = [
     tags: ["Buyers", "Traders"],
     shortdesc:
       "Extraction and secure custody, with full chain-of-custody from pit to vault.",
-    lede: "We mine under license and move material into insured, access-logged storage — with independent assay verification before anything is recorded as yours.",
+    lede: "We mine under license and move material into insured, access-logged storages with independent assay verification before anything is recorded as yours.",
     capability: [
       { title: "Licensed extraction", paragraph: "Mining under permit, following the safety and environmental terms of the site's specific license." },
       { title: "On-site processing", paragraph: "Initial cleaning, sorting and grading of gold, lithium, titanium, aquamarine, tin, copper and limestone as it's extracted." },
-      { title: "Independent assay verification", paragraph: "Third-party labs confirm purity and volume before anything enters storage — this figure, not our own, is what goes on your record." },
+      { title: "Independent assay verification", paragraph: "Third-party labs confirm purity and volume before anything enters storage. So this figure, not our own, is what goes on your record." },
       { title: "Insured, access-logged storage", paragraph: "Verified material moves into secured storage under a dedicated custody insurance policy, with every access logged against the batch." },
     ],
     audience: [
@@ -55,8 +55,8 @@ export const SERVICES: Service[] = [
       { title: "Institutional holders", paragraph: "You need insured, audited custody for mineral assets held as part of a larger portfolio." },
     ],
     faq: [
-      { q: "How is stored material insured?", a: "Each batch is covered under a dedicated custody insurance policy specific to its assayed value — it isn't blended into a general company asset policy." },
-      { q: "Where exactly is material stored?", a: "We don't publish storage or extraction site locations publicly, for security reasons — this is standard industry practice. Verified clients can review storage security arrangements directly, in person, at our head office." },
+      { q: "How is stored material insured?", a: "Each batch is covered under a dedicated custody insurance policy specific to its assayed value. It isn't blended into a general company asset policy." },
+      { q: "Where exactly is material stored?", a: "We don't publish storage or extraction site locations publicly, for security reasons and this is standard industry practice. Verified clients can review storage security arrangements directly, in person, at our head office." },
     ],
   },
   {
@@ -65,12 +65,12 @@ export const SERVICES: Service[] = [
     title: "Site Scouting for Partner Companies",
     tags: ["Companies seeking concessions"],
     shortdesc: "We locate and prepare government-viable sites on your behalf.",
-    lede: "For companies that need a mining site but don't have in-house scouting expertise — we handle identification, feasibility and application support, under your name.",
+    lede: "For companies that need a mining site but don't have in-house scouting expertise: we handle identification, feasibility and application support, under your name.",
     capability: [
       { title: "Brief & criteria", paragraph: "We take your mineral target, budget and region constraints and translate them into a search criteria." },
       { title: "Candidate identification", paragraph: "Desk research and field visits shortlist sites matching your criteria and with clean legal standing." },
       { title: "Feasibility assessment", paragraph: "Sampling and yield modelling on shortlisted sites, so you compare options on the same basis before choosing." },
-      { title: "Concession application support", paragraph: "We prepare the technical documentation your application needs — under your company's name, with our field data behind it." },
+      { title: "Concession application support", paragraph: "We prepare the technical documentation your application needs, under your company's name, with our field data behind it." },
     ],
     audience: [
       { title: "Manufacturers", paragraph: "You need a reliable, owned supply of a specific mineral rather than relying on the open market." },
@@ -78,7 +78,7 @@ export const SERVICES: Service[] = [
       { title: "Existing operators expanding", paragraph: "You already hold a concession and want to identify a second or third site under the same standard." },
     ],
     faq: [
-      { q: "Does the concession end up in our name or yours?", a: "Yours. We act on your behalf throughout — our name appears as the technical partner in supporting documentation, but the license application and resulting concession are your company's." },
+      { q: "Does the concession end up in our name or yours?", a: "Yours. We act on your behalf throughout and our name appears as the technical partner in supporting documentation, but the license application and resulting concession are your company's." },
       { q: "How long does the process typically take?", a: "From initial brief to a submitted concession application usually runs three to six months, depending on site accessibility and the relevant government body's processing time." },
     ],
   },
@@ -89,7 +89,7 @@ export const SERVICES: Service[] = [
     tags: ["Investors", "Boards"],
     shortdesc:
       "Know which deposit is worth mining before capital is committed.",
-    lede: "We combine market pricing, demand trends and realistic extraction cost into a single, comparable read — so an investment decision holds up under scrutiny.",
+    lede: "We combine market pricing, demand trends and realistic extraction cost into a single, comparable read. Thereby so an investment decision holds up under scrutiny.",
     capability: [
       { title: "Market pricing research", paragraph: "Current and historical pricing for the mineral in question, across relevant regional and global markets." },
       { title: "Demand & extraction-cost modelling", paragraph: "We weigh projected demand against realistic extraction cost for your specific site conditions." },
@@ -102,7 +102,7 @@ export const SERVICES: Service[] = [
       { title: "Existing operators", paragraph: "You want a periodic outside check on whether current operations still make commercial sense." },
     ],
     faq: [
-      { q: "Where does your pricing data come from?", a: "We draw from public market data, industry trade reports, and our own field-level cost data from active sites — combining published figures with real extraction-cost experience." },
+      { q: "Where does your pricing data come from?", a: "We draw from public market data, industry trade reports, and our own field-level cost data from active sites and combine published figures with real extraction-cost experience." },
       { q: "Can you analyse a mineral you don't currently mine?", a: "Yes. Market analysis is available independently of our mining and storage services." },
     ],
   },
@@ -113,7 +113,7 @@ export const SERVICES: Service[] = [
     tags: ["Operating companies"],
     shortdesc:
       "Crew, equipment, safety compliance and output reporting, end to end.",
-    lede: "For companies that hold a concession but need it operated to a consistent standard — crew, safety, output tracking and reporting, handled end to end.",
+    lede: "For companies that hold a concession but need it operated to a consistent standard: our crew, safety, output tracking and reporting, handled end to end.",
     capability: [
       { title: "Crew & equipment management", paragraph: "Staffing, scheduling and equipment upkeep handled to a consistent operational standard." },
       { title: "Safety & compliance", paragraph: "Site safety protocols and regulatory compliance monitored continuously, not just at audit time." },
@@ -126,7 +126,7 @@ export const SERVICES: Service[] = [
       { title: "Investors post-acquisition", paragraph: "You've acquired a stake in an active site and want professional operational management going forward." },
     ],
     faq: [
-      { q: "Do you take over the license itself?", a: "No — the concession and license remain in your company's name. We manage operations under an operating agreement with you." },
+      { q: "Do you take over the license itself?", a: "No, the concession and license remain in your company's name. We manage operations under an operating agreement with you." },
       { q: "Can you take over a site that's already running?", a: "Yes. We start with an operational audit of the existing site before transitioning management, so nothing is disrupted mid-handover." },
     ],
   },
@@ -152,9 +152,9 @@ export const MINERALS: Mineral[] = [
     color: "#C9A227", 
     status: "In production", 
     uses: "Reserve asset, jewellery, electronics",
-    ledeparagraph: "Gold remains our highest-volume mineral — extracted from alluvial and reef deposits and moved into insured storage under independent assay verification",
+    ledeparagraph: "Gold remains our highest-volume mineral, extracted from alluvial and reef deposits and moved into insured storage under independent assay verification",
     FaqQuestion: [
-      {eyebrow:"What purity do you typically deliver?", title:"Purity is confirmed per batch by independent assay — exact figures are shared with buyers alongside the certificate, rather than quoted as a blanket number here."},
+      {eyebrow:"What purity do you typically deliver?", title:"Purity is confirmed per batch by independent assay and exact figures are shared with buyers alongside the certificate, rather than quoted as a blanket number here."},
       {eyebrow:"Can I buy a specific batch?", title:"Yes, subject to availability. Batches are sold with full assay documentation and chain-of-custody records." }
     ],
     capabilities : [
@@ -171,10 +171,10 @@ export const MINERALS: Mineral[] = [
     color: "#8A8F92", 
     status: "In production", 
     uses: "Battery-grade concentrate" ,
-    ledeparagraph: "Extracted from pegmatite ore bodies and processed to battery-grade concentrate — a market we track closely given how quickly demand and pricing shift.",
+    ledeparagraph: "Extracted from pegmatite ore bodies and processed to battery-grade concentrate. This is a market we track closely given how quickly demand and pricing shift.",
     FaqQuestion: [
-      {eyebrow:"Why is lithium pricing volatile right now?", title:"Battery demand and new supply coming online globally are both moving quickly — see our Market Insights for current-quarter analysis."},
-      {eyebrow:"Do you supply direct to battery manufacturers?", title:"Yes, subject to volume and specification requirements — get in touch with your needs."},
+      {eyebrow:"Why is lithium pricing volatile right now?", title:"Battery demand and new supply coming online globally are both moving quickly. See our Market Insights for current-quarter analysis."},
+      {eyebrow:"Do you supply direct to battery manufacturers?", title:"Yes, subject to volume and specification requirements. We can get in touch with your needs."},
     ],
     capabilities : [
       {title: "Extraction method",paragraph: "Hard-rock pegmatite mining, processed on-site to concentrate."},
@@ -189,14 +189,14 @@ export const MINERALS: Mineral[] = [
     color: "#6E7B85", 
     status: "Scouting", 
     uses: "Aerospace, pigment feedstock",
-    ledeparagraph: "Currently in the scouting phase — we're surveying heavy mineral sand deposits and expect to move toward production as current site assessments complete.",
+    ledeparagraph: "Currently in the scouting phase, we are surveying heavy mineral sand deposits and expect to move toward production as current site assessments complete.",
     FaqQuestion: [
-      {eyebrow:"When will titanium be available?", title:"We don't commit to a date until survey and feasibility results are confirmed — ask for our current progress update."},
-      {eyebrow:"Can I be notified when it moves to production?", title:"Yes — flag your interest via the contact form and we'll follow up directly."},
+      {eyebrow:"When will titanium be available?", title:"We don't commit to a date until survey and feasibility results are confirmed. You can ask for our current progress update."},
+      {eyebrow:"Can I be notified when it moves to production?", title:"Yes flag your interest via the contact form and we'll follow up directly."},
     ],
     capabilities : [
       {title: "Deposit type",paragraph: "Heavy mineral sand, currently under geological survey."},
-      {title: "Current status",paragraph: "Scouting — not yet in production."},
+      {title: "Current status",paragraph: "Scouting not yet in production."},
       {title: "Expected timeline",paragraph: "Production status will update as current surveys complete; ask for the latest read."},
     ], 
   },
@@ -207,9 +207,9 @@ export const MINERALS: Mineral[] = [
     color: "#5C9384", 
     status: "In production", 
     uses: "Gemstone grade, jewellery",
-    ledeparagraph: "Extracted from pegmatite veins and graded to gemstone standard — a smaller-volume, higher-scrutiny operation compared to our industrial minerals.",
+    ledeparagraph: "Extracted from pegmatite veins and graded to gemstone standard. It is of a smaller-volume, higher-scrutiny operation compared to our industrial minerals.",
     FaqQuestion: [
-      {eyebrow:"Do you sell individual stones or by volume?", title:"Both, depending on the buyer — jewellers and gem traders typically work with us differently than industrial buyers of other minerals."},
+      {eyebrow:"Do you sell individual stones or by volume?", title:"Both, depending on the buyer, jewellers and gem traders typically work with us differently than industrial buyers of other minerals."},
       {eyebrow:"Is grading independently verified?", title:"Yes, gemstone grading is confirmed by a third-party gemologist before any stone leaves storage."},
     ],
     capabilities : [
@@ -225,10 +225,10 @@ export const MINERALS: Mineral[] = [
     color: "#9A9186", 
     status: "In production", 
     uses: "Solder, electronics alloys",
-    ledeparagraph: "Extracted as cassiterite ore and processed for electronics and alloy use — a stable, consistent part of our production alongside copper",
+    ledeparagraph: "Extracted as cassiterite ore and processed for electronics and alloy use. It is a stable, consistent part of our production alongside copper",
     FaqQuestion: [
-      {eyebrow:"What industries buy your tin?", title:"Primarily electronics and alloy manufacturers — solder-grade demand is our largest use case."},
-      {eyebrow:"Can you supply on a recurring schedule?", title:"Yes, standing supply arrangements are available for consistent buyers — ask about terms."},
+      {eyebrow:"What industries buy your tin?", title:"Primarily electronics and alloy manufacturers. Solder-grade demand is our largest use case."},
+      {eyebrow:"Can you supply on a recurring schedule?", title:"Yes, standing supply arrangements are available for consistent buyers. You can ask about terms."},
     ],
     capabilities : [
       {title: "Extraction method",paragraph: "Cassiterite ore mining, processed to concentrate on-site."},
@@ -243,7 +243,7 @@ export const MINERALS: Mineral[] = [
     color: "#B4552D", 
     status: "In production", 
     uses: "Wiring, construction, EVs",
-    ledeparagraph: "One of our highest-demand minerals, driven by wiring, construction and EV manufacturing — extracted from sulphide deposits and processed on-site.",
+    ledeparagraph: "One of our highest-demand minerals, driven by wiring, construction and EV manufacturing. It is extracted from sulphide deposits and processed on-site.",
     FaqQuestion: [
       {eyebrow:"", title:""},
       {eyebrow:"", title:""},
@@ -261,9 +261,9 @@ export const MINERALS: Mineral[] = [
     color: "#B7AF9C", 
     status: "In production", 
     uses: "Cement, construction aggregate",
-    ledeparagraph: "Quarried from sedimentary bedrock for cement and construction aggregate use — our highest-volume, lowest-complexity extraction.",
+    ledeparagraph: "Quarried from sedimentary bedrock for cement and construction aggregate use. It is our highest-volume, lowest-complexity extraction.",
     FaqQuestion: [
-      {eyebrow:"What volumes are typically available?", title:"Limestone is our highest-volume mineral — ask for current available tonnage."},
+      {eyebrow:"What volumes are typically available?", title:"Limestone is our highest-volume mineral. You can ask for current available tonnage."},
       {eyebrow:"Do you supply to construction firms directly?", title:"Yes, both direct supply and standing contracts are available"},
     ],
     capabilities : [
@@ -331,7 +331,7 @@ export const CONTACT_TYPES = [
   },
   {
     title : "Existing operators",
-    paragraph: "Hand us day-to-day running of your active site — crew, compliance, output reporting.",
+    paragraph: "Hand us day-to-day running of your active site, crew, compliance, output reporting.",
     link : "contact",
     linkText : "Discuss operations support →"
   },
@@ -342,7 +342,7 @@ export type step = {title:string, paragraph:string}[]
 export const STEP1 : step = [
   {title:"Investor", paragraph:"Request our current market report and a feasibility read on a mineral or region you're watching"},
   {title:"Company seeking a site", paragraph:"We'll scout, assess and carry a concession through to government-ready feasibility on your behalf."},
-  {title:"Existing operator", paragraph:"Hand us day-to-day running of your active site — crew, compliance, output reporting."},
+  {title:"Existing operator", paragraph:"Hand us day-to-day running of your active site crew, compliance, output reporting."},
 
 ]
 
