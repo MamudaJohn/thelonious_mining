@@ -358,3 +358,68 @@ export const contactaddress : address = [
  {h1:"VISIT", title:"82, Mobolaji Bank Anthony Way, Ikeja, Lagos",paragraph:"No appointment required during business hours"},
 ]
 
+export type question = {
+  title:string,
+  paragraph: string
+}
+
+export type faq = Record<string, question[]>;
+
+
+
+export const about: faq[] = [
+  {
+    "Faq" : [
+      {title:"How do I know Thelonious Mining is legitimate?", paragraph:"Our mining and exploration license is registered and verifiable with the issuing authority. You can ask for the license number and we'll point you to where it can be checked. You're also welcome to visit our head office directly, listed below, or request a private site visit."},
+      {title:"Why don't you disclose your mine site locations?", paragraph:"Publishing exact coordinates of an active mining site invites claim-jumping and unauthorised entry, so we withhold them as policy. This is standard across the industry, not specific to us. Our head office address is always public, and confirmed partners are taken to site in person"},
+      {title:"How is stored material kept secure?", paragraph:"Extracted material is logged, insured under a dedicated custody policy, and access-controlled from the point of extraction through to storage. Every movement is recorded against the chain-of-custody log for that batch."},
+      {title:"What happens after I submit a request?", paragraph:"A member of the relevant team reviews your request and responds within one business day, usually with a short call to understand scope before any formal proposal."},
+      {title:"You're a new company so why should I trust you over an established one?", paragraph:"You shouldn't take that on faith, that is why we lead with license verification, named staff, and open access to current fieldwork rather than a history we don't have yet. Judge us on what you can check today."},
+      {title:"Do you work outside your home region?", paragraph:"Yes. Scouting, market analysis and operations management engagements are handled remotely where needed, with site visits arranged as the project requires."},
+    ]
+  },
+  {
+    "credentials": [
+      {title:"Licensed operator", paragraph:"Registered mining and exploration license, verifiable with the issuing authority on request."},
+      {title:"Insured custody", paragraph:"All stored material is covered under a dedicated custody insurance policy, not blended into general assets."},
+      {title:"Independent assay verification", paragraph:"Third-party laboratories confirm purity and volume before any material enters storage or sale."},
+      {title:"Environmental compliance", paragraph:"ISO 14001-aligned site rehabilitation and emissions monitoring at every active concession."}
+    ]
+  },
+  {
+    "about" : [
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+    ]
+  },
+  {
+    name :  [
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+    ]
+  },
+  {
+    name : [
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+      {title:"", paragraph:""},
+    ]
+  },
+  
+]
+
+

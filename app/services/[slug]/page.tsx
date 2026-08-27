@@ -108,7 +108,7 @@ export default async function ServicePage({ params }: Params) {
         <div className="wrap">
           <SectionHeadOne
             eyebrow="FAQ"
-            header=""
+            header="Some frequently asked questions"
         />
         {service.faq.map((item) => (
         <DropDownContent

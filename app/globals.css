@@ -736,8 +736,8 @@ section {
 .log-row {
   display: grid;
   grid-template-columns: 110px 1fr 140px;
-  gap: 30px;
-  padding: 34px 0;
+  gap: clamp(15px, 2vw, 25px);
+  padding: clamp(15px, 2vw, 25px) 0;
   border-bottom: 1px solid var(--line);
   align-items: start;
 }

@@ -2,19 +2,23 @@ import GreenButton from "@/components/buttons/GreenButton"
 import ContentDisplayOne from "@/components/section/ContentDisplayOne"
 import CtaPanel from "@/components/section/CtaPanel"
 import CtaRow from "@/components/section/CtaRow"
+import DropDownContent from "@/components/section/DropDownContent"
 import SectionHeadOne from "@/components/section/SectionHeadOne"
 import EyeBrow from "@/components/ui/paragraphs/EyeBrow"
 import LedeParagraph from "@/components/ui/paragraphs/Lede"
+import { about, faq } from "@/lib/data"
 import Link from "next/link"
 
 
-function AboutPage() {
+export default function AboutPage() {
+
+
   return (
     <div className="wrap">
         <section className="hero1" id="hero1">
             <div className="wrap">
             <div className="hero1-grid">
-                <EyeBrow text={"About Stratum Resources"} />
+                <EyeBrow text={"About Thelonious Mining"} />
                 <h1>{"We're new. Here's exactly what that means, and what it doesn't."}</h1>
                 <LedeParagraph text={"Thelonious Mining was founded in 2026 to bring exploration, mining, storage and market analysis under one standard of evidence though rigorous enough that you don't have to take our word for any of it."} />
             </div>
@@ -82,6 +86,7 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Members of the Team */}
       <section id="principles">
         <div className="wrap">
           <SectionHeadOne
@@ -91,6 +96,45 @@ function AboutPage() {
           />
         </div>
       </section>
+
+      {/* Credentials */}
+      <section id="services">
+        <div className="wrap">
+          <SectionHeadOne
+            eyebrow="Credentials"
+            header="Every claim on this page is checkable." 
+          />
+        <div className="log">
+          {about[1].credentials.map((item, i) => (
+            <ContentDisplayOne 
+            key={i} 
+            depth={`0${i+1}`} 
+            title={item.title} 
+            shortdesc={item.paragraph}/>
+          ))}
+        </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="services">
+        <div className="wrap">
+          <SectionHeadOne
+            eyebrow="FAQ"
+            header="Everything people ask us before working together."
+        />
+        {about[0].Faq.map((item) => (
+        <DropDownContent
+          key={item.title}
+            depth = {item.title}
+            title = {item.title}
+            shortdesc = {item.paragraph}
+        />
+          ))}
+        </div>
+      </section>
+
+      {/* Address */}
       <section>
             <div className="wrap info">
               <div className="about_us">
@@ -143,4 +187,3 @@ function AboutPage() {
   )
 }
 
-export default AboutPage
