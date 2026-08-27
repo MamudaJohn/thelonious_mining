@@ -48,14 +48,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const { services, minerals } = await fetchDynamicRoutes();
 
   const mineralEntries = minerals.map((slug: string) => ({
-    url: `https://${BASE_URL}/minerals/${slug}`,
+    url: `${BASE_URL}/minerals/${slug}`,
     lastModified: new Date(),
     changeFrequency: "yearly" as const,
     priority: 0.6,
   }));
 
   const serviceEntries = services.map((slug: string) => ({
-    url: `https://${BASE_URL}/services/${slug}`,
+    url: `${BASE_URL}/services/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
