@@ -1,4 +1,5 @@
 import GreenButton from "@/components/buttons/GreenButton"
+import ContentDisplayBorder from "@/components/section/ContentDisplayBorder"
 import ContentDisplayOne from "@/components/section/ContentDisplayOne"
 import CtaPanel from "@/components/section/CtaPanel"
 import CtaRow from "@/components/section/CtaRow"
@@ -7,6 +8,7 @@ import SectionHeadOne from "@/components/section/SectionHeadOne"
 import EyeBrow from "@/components/ui/paragraphs/EyeBrow"
 import LedeParagraph from "@/components/ui/paragraphs/Lede"
 import { about, faq } from "@/lib/data"
+import Image from "next/image"
 import Link from "next/link"
 
 
@@ -87,13 +89,23 @@ export default function AboutPage() {
       </section>
 
       {/* Members of the Team */}
-      <section id="principles">
+      <section id="team">
         <div className="wrap">
           <SectionHeadOne
           eyebrow="leadership"
           header="The people behind the license."
           paragraph="Meet the face of the brain of the team. The executive head of this company."
           />
+          <div className="team">
+            <div className="team-card">
+              <Image className="profile" src="/ceo.jpg" alt="Image of the Founder" width={150} height={150} priority/>
+              <div className="">
+                <h4>Emmanuel Mamuda</h4>
+                <div className="role">Founder & Managing Director</div>
+              </div>
+              <p>Leads company direction, government relations and partner engagements. Replace with founder&apos;s real background, prior experience and credentials.</p>
+          </div>
+          </div>
         </div>
       </section>
 

@@ -1514,3 +1514,48 @@ section {
 } */
 
 
+.team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: none;
+  padding: 0px;
+  margin: 0px;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .team {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  gap: 6px;
+}
+
+.team-card p {
+  font-family: var(--font-body);
+  font-size: small;
+}
+
+.role {
+  color: var(--verdigris);
+  font-size: small;
+  /* border: 0.5px solid var(--verdigris); */
+  display: inline;
+  width: fit-content;
+  padding: 0px 0px 6px 0px;
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+.profile {
+  width: 200px;
+  border-radius: 50%;
+}
+
