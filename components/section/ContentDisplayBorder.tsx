@@ -17,7 +17,6 @@ interface contentDisplayBorder {
 
 // function ContentDisplayBorder({title, paragraph, link = null, linkText=null}: valueReceived) {
 function ContentDisplayBorder({values, children, contact}: contentDisplayBorder) {
-
   return (
     <div className="contact-grid">
             {children || values?.map((value) => ( 

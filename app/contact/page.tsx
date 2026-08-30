@@ -1,17 +1,15 @@
+"use client"
+
+import ContactFormSection from "@/components/ContactFormSection";
 import ContentDisplayBorder from "@/components/section/ContentDisplayBorder";
-import CtaPanel from "@/components/section/CtaPanel";
 import SectionHeadOne from "@/components/section/SectionHeadOne";
 import EyeBrow from "@/components/ui/paragraphs/EyeBrow";
 import LedeParagraph from "@/components/ui/paragraphs/Lede";
-import MicroCopy from "@/components/ui/paragraphs/MicroCopy";
-import ParagraphGrid from "@/components/ui/paragraphs/ParagraphGrid";
 import { contactaddress, STEP1 } from "@/lib/data";
-import Link from "next/link";
-import { Children } from "react";
 
-function AboutPage() {
+function ContactPage() {
   return (
-    <>
+    <div className="wrap">
         <section className="hero1" id="hero1">
             <div className="wrap">
             <div className="hero1-grid">
@@ -21,13 +19,10 @@ function AboutPage() {
             </div>
             </div>
         </section>
-        <section id="contact">
+        <ContactFormSection />
+        {/* <section id="contact">
             <div className="wrap">
-                <SectionHeadOne
-                eyebrow="start a conversation"
-                header="Tell us where you&apos;re standing, and we&apos;ll tell you the next step."
-                paragraph=""
-                />
+                <SectionHeadOne eyebrow="step 1" header="Tell us who is reaching out." paragraph=""/>
     
                 <ContentDisplayBorder values={STEP1} contact={true}/>
     
@@ -49,7 +44,7 @@ function AboutPage() {
                             </div>
                             <div className="">
                                 <label htmlFor="fullname">Phone (OPTIONAL)</label>
-                                <input type="email" placeholder="+234" required id="fullname" />
+                                <input type="email" placeholder="+234" required id="phone" />
                             </div>
                         </div>
                         <div className="lead-form2">
@@ -75,7 +70,7 @@ function AboutPage() {
                 </div>  
                  
             </div>
-        </section>
+        </section> */}
 
         <section id="contact">
             <div className="wrap">
@@ -103,8 +98,8 @@ function AboutPage() {
             </div>
         </section>
         
-    </>
+    </div>
   )
 }
 
-export default AboutPage;
+export default ContactPage;

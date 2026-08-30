@@ -1186,6 +1186,13 @@ section {
   background: var(--basalt);
   padding: 34px 28px;
 }
+
+.contact-card1 {
+  background: var(--basalt-2);
+  padding: 34px 28px;
+  border: 1px solid var(--gold-dim)
+}
+
 .contact-card h4 {
   font-size: 18px;
   margin-bottom: 10px;
