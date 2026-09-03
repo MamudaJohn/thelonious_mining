@@ -65,9 +65,9 @@ export default function RootLayout({
     '@type': 'Company & Organization',
     'name': 'Thelonious Mining',
     'url': 'https://theloniousmining.com',
-    'logo': 'https://theloniousmining.com/company.png'
+    'logo': 'https://theloniousmining.com/logo.png'
   }
-  
+
   return (
     <html
       lang="en"
