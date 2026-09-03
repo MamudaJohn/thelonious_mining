@@ -60,11 +60,25 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+    const jsonLd = {
+    '@context': "https://theloniousmining.com",
+    '@type': 'Company & Organization',
+    'name': 'Thelonious Mining',
+    'url': 'https://theloniousmining.com',
+    'logo': 'https://theloniousmining.com/company.png'
+  }
+  
   return (
     <html
       lang="en"
       className={`${fraunces.variable} ${publicSans.variable} ${plexMono.variable}`}
     >
+      <head>
+        <script 
+         type="application/ld+json"
+         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <ScrollUI />
         <Header />
